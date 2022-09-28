@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald",
+      "nbt": "{CustomModelData:700}"
+    },
+    "title": {
+      "text": "Lothlorien"
+    },
+    "description": {
+      "text": "All that is gold does not glitter, not all who wander are lost. The old that is strong does not wither, deep roots are not reached by the frost."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "xc:sky/explore_sky",
+  "criteria": {
+    "xc:golden_skywoods": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "y": {
+                    "min": 72, "max": 400
+                  }
+                },
+                "biome": "xc:golden_skywoods"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:golden_skywoods"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}

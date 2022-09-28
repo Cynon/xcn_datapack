@@ -1,0 +1,114 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "config": {
+    "surface": "ceiling",
+    "depth": 3,
+    "vertical_range": 27,
+    "extra_bottom_block_chance": 0.2,
+    "extra_edge_column_chance": 0.5,
+    "vegetation_chance": 1,
+    "xz_radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": -3,
+        "max_inclusive": 2
+      }
+    },
+    "replaceable": "#minecraft:nether_carver_replaceables",
+    "ground_state": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:blackstone"
+      }
+    },
+    "vegetation_feature": {
+      "feature": {
+        "type": "minecraft:block_column",
+        "config": {
+          "direction": "down",
+          "allowed_placement": {
+            "type": "minecraft:any_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "blocks": "minecraft:blackstone"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -2,
+                  0
+                ],
+                "blocks": "minecraft:air"
+              }
+            ]
+          },
+          "prioritize_tip": false,
+          "layers": [
+            {
+              "height": {
+                "type": "minecraft:biased_to_bottom",
+                "value": {
+                  "min_inclusive": 0,
+                  "max_inclusive": 7
+                }
+              },
+              "provider": {
+                "type": "minecraft:noise_provider",
+                "seed": 0,
+                "noise": {
+                  "firstOctave": -4,
+                  "amplitudes": [
+                    0.8,
+                    1,
+                    1.4,
+                    0.9,
+                    0.7,
+                    0.5
+                  ]
+                },
+                "scale": 2,
+                "states": [
+                  {
+                    "Name": "minecraft:blackstone"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:noise_based_count",
+          "noise_to_count_ratio": 10,
+          "noise_factor": 25,
+          "noise_offset": 0.15
+        },
+        {
+          "type": "minecraft:rarity_filter",
+          "chance": 27
+        },
+        {
+          "type": "minecraft:count",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

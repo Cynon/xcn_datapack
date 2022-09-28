@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:jukebox"
+    },
+    "title": {
+      "text": "Crimson Rhapsody"
+    },
+    "description": "Play the red music disc in the red forest.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/crimson_forest",
+  "criteria": {
+    "play_jukebox_in_cf_red": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_chirp"
+          ]
+        },
+        "location": {
+          "biome": "minecraft:crimson_forest",
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "play_jukebox_in_cf_red"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}

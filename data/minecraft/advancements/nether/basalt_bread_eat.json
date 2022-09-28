@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bread",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": {
+      "text": "Artemi Panarin"
+    },
+    "description": {
+      "text": "For each goal Artemi Panarin scored in 2022, eat one bread in the basalt deltas."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/basalt_bread",
+  "criteria": {
+    "xc:bread": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:basalt_deltas"
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:bread"
+          ],
+          "count": 28
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:bread"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

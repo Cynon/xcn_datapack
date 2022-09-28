@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bread"
+    },
+    "title": {
+      "text": "Venera Bread"
+    },
+    "description": {
+      "text": "You HAD to know this was coming..."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/basalt_deltas",
+  "criteria": {
+    "xc:bread2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "xc:basalt_deltas"
+          }
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:bread"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:bread2"
+    ]
+  ],
+  "rewards": {
+    "experience": 16
+  }
+}

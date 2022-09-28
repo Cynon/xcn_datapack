@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherrack",
+      "nbt": "{Damage:5}"
+    },
+    "title": {
+      "text": "Wasted"
+    },
+    "description": {
+      "text": "I'm sorry."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/nether_wastes",
+  "criteria": {
+    "xc:wasted": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "minecraft:nether_wastes"
+              }
+            }
+          }
+        ],
+        "entity": []
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:wasted"
+    ]
+  ],
+  "rewards": {
+    "experience": 5
+  }
+}

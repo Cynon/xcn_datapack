@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:basalt",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Venera Sojourner"
+    },
+    "description": {
+      "text": "Basalt commonly erupts on Io (the third largest moon of Jupiter), and has also formed on the Moon, Mars, Venus, and the asteroid Vesta."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/explore_nether",
+  "criteria": {
+    "minecraft:basalt_delta": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "minecraft:basalt_deltas"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "minecraft:basalt_delta"
+    ]
+  ],
+  "rewards": {
+    "experience": 25
+  }
+}

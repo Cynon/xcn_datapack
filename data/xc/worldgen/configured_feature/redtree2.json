@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:huge_fungus",
+  "config": {
+    "hat_state": {
+      "Name": "minecraft:red_stained_glass"
+    },
+    "decor_state": {
+      "Name": "minecraft:shroomlight"
+    },
+    "stem_state": {
+      "Name": "minecraft:brown_terracotta",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "valid_base_block": {
+      "Name": "minecraft:red_sandstone"
+    },
+    "planted": false
+  }
+}

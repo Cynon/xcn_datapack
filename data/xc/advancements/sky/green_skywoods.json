@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:oak_sapling",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Bottom Text"
+    },
+    "description": {
+      "text": "You didn't have words for this either, don't lie to me."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "xc:sky/explore_sky",
+  "criteria": {
+    "xc:green_skywoods": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "y": {
+                    "min": 72, "max": 400
+                  }
+                },
+                "biome": "xc:green_skywoods"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:green_skywoods"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}

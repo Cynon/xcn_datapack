@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_nylium",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Plot Twist"
+    },
+    "description": {
+      "text": "At least this one is welcomed."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/explore_nether",
+  "criteria": {
+    "minecraft:warped_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "minecraft:warped_forest"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "minecraft:warped_forest"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}

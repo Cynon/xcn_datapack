@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherrack",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Waste of Space"
+    },
+    "description": {
+      "text": "I'm not sorry."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/explore_nether",
+  "criteria": {
+    "minecraft:nether_wastes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "minecraft:nether_wastes"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "minecraft:nether_wastes"
+    ]
+  ],
+  "rewards": {
+    "experience": 5
+  }
+}

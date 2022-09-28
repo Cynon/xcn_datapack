@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherrack"
+    },
+    "title": {
+      "text": "From the Penthouse to the Cellar"
+    },
+    "description": {
+      "text": "Michael Jackson didn't have a fall from grace this quickly!"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "xc:sky/back_to_overworld",
+  "criteria": {
+    "xc:left_sky_for_hell": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "xc:pax",
+        "to": "minecraft:the_nether"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:left_sky_for_hell"
+    ]
+  ]
+}

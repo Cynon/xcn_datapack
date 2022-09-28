@@ -1,0 +1,65 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:music_disc_11"
+    },
+    "title": {
+      "text": "Records Made Soon After"
+    },
+    "description": "Play strange noises for a twisted audience.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/warped_forest",
+  "criteria": {
+    "play_jukebox_in_wf_5": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_5"
+          ]
+        },
+        "location": {
+          "biome": "minecraft:warped_forest",
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "play_jukebox_in_wf_11": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_11"
+          ]
+        },
+        "location": {
+          "biome": "minecraft:warped_forest",
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "play_jukebox_in_wf_5"
+    ],
+    [
+      "play_jukebox_in_wf_11"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}

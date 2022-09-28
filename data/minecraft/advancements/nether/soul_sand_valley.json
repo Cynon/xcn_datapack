@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:soul_soil",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Mystic Spirit Voices"
+    },
+    "description": {
+      "text": "More than just Lesiem's first album!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/explore_nether",
+  "criteria": {
+    "minecraft:soul_sand_valley": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "minecraft:soul_sand_valley"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "minecraft:soul_sand_valley"
+    ]
+  ],
+  "rewards": {
+    "experience": 25
+  }
+}

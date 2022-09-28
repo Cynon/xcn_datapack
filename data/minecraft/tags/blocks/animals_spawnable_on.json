@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:grass_block",
+    "minecraft:netherrack",
+    "minecraft:blackstone",
+    "#minecraft:dirt",
+    "#minecraft:nylium",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    "minecraft:red_sand"
+	
+  ]
+}

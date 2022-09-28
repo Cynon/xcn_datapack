@@ -1,0 +1,122 @@
+{
+  "temperature": 0.81,
+  "downfall": 0.1,
+  "precipitation": "rain",
+  "effects": {
+    "sky_color": 16773055,
+    "fog_color": 16773316,
+    "water_color": 14676724,
+    "water_fog_color": 13294043,
+    "grass_color": 9221129,
+    "foliage_color": 16762186,
+    "ambient_sound": "marathon.nightwind.loop",
+    "music": {
+      "sound": "music.overworld.jungle_and_forest",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:falling_nectar"
+      },
+      "probability": 0.0019
+    }
+  },
+  "spawners": {
+    "water_ambient": [
+      {
+        "type": "minecraft:tropical_fish",
+        "weight": 7,
+        "minCount": 1,
+        "maxCount": 5
+      }
+    ],
+    "water_creature": [
+      {
+        "type": "minecraft:dolphin",
+        "weight": 1,
+        "minCount": 2,
+        "maxCount": 2
+      }
+    ],
+    "creature": [
+      {
+        "type": "minecraft:chicken",
+        "weight": 10,
+        "minCount": 2,
+        "maxCount": 2
+      },
+      {
+        "type": "minecraft:pig",
+        "weight": 6,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:sheep",
+        "weight": 12,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:canyon",
+      "minecraft:cave",
+      "minecraft:cave_extra_underground"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "xc:lake_water_sky",
+      "xc:lake_water_underground_sky"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "xc:ore_emerald_sky",
+      "xc:ore_end_stone_sky_sparse",
+      "xc:ore_gold_sky",
+      "xc:ore_gold_raw_sky",
+      "xc:ore_iron_sky",
+      "xc:ore_lapis_sky",
+      "xc:ore_lapis_sky_buried",
+      "xc:ore_orange_terracotta_sky",
+      "xc:ore_prismarine_sky_sparse",
+      "xc:ore_red_terracotta_sky",
+      "xc:ore_redstone_sky",
+      "xc:ore_yellow_terracotta_sky"
+    ],
+    [],
+    [
+      "xc:lake_water_sky",
+      "xc:lake_water_underground_sky",
+      "xc:spring_water_sky"
+    ],
+    [
+      "minecraft:flower_forest_flowers",
+      "minecraft:flower_flower_forest",
+      "minecraft:flower_swamp",
+      "minecraft:patch_melon",
+      "minecraft:spring_water",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_grass_normal",
+      "xc:patch_tall_grass_sky",
+      "xc:trees_golden_skywoods"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

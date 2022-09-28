@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:huge_fungus",
+  "config": {
+    "hat_state": {
+      "Name": "minecraft:dead_tube_coral_block",
+      "Properties": {
+        "waterlogged": "false"
+      }
+    },
+    "decor_state": {
+      "Name": "minecraft:skeleton_skull",
+      "Properties": {
+        "rotation": "4"
+      }
+    },
+    "stem_state": {
+      "Name": "minecraft:polished_basalt",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "valid_base_block": {
+      "Name": "minecraft:blackstone"
+    },
+    "planted": false
+  }
+}

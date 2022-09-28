@@ -1,0 +1,324 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:music_disc_otherside",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": {
+      "text": "Bring Back Napster!"
+    },
+    "description": "Play every music disc in a jukebox.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/play_jukebox_in_meadows",
+  "criteria": {
+    "disc_11": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_11"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_5": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_5"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_13": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_13"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_pigstep": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_pigstep"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_otherside": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_otherside"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_ward": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_ward"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_mellohi": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_mellohi"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_cat": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_cat"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_chirp": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_chirp"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_blocks": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_blocks"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_mall": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_mall"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_wait": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_wait"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_far": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_far"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_stal": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_stal"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    },
+    "disc_strad": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_strad"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "disc_11"
+    ],
+    [
+      "disc_5"
+    ],
+    [
+      "disc_13"
+    ],
+    [
+      "disc_blocks"
+    ],
+    [
+      "disc_cat"
+    ],
+    [
+      "disc_chirp"
+    ],
+    [
+      "disc_far"
+    ],
+    [
+      "disc_mall"
+    ],
+    [
+      "disc_mellohi"
+    ],
+    [
+      "disc_otherside"
+    ],
+    [
+      "disc_pigstep"
+    ],
+    [
+      "disc_stal"
+    ],
+    [
+      "disc_strad"
+    ],
+    [
+      "disc_wait"
+    ],
+    [
+      "disc_ward"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}

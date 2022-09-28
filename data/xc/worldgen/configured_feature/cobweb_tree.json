@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:huge_fungus",
+  "config": {
+    "hat_state": {
+      "Name": "minecraft:cobweb"
+    },
+    "decor_state": {
+      "Name": "minecraft:glowstone"
+    },
+    "planted": false,
+    "valid_base_block": {
+      "Name": "minecraft:blackstone"
+    },
+    "stem_state": {
+      "Properties": {
+        "axis": "y"
+      },
+      "Name": "minecraft:polished_basalt"
+    }
+  }
+}

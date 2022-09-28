@@ -1,0 +1,9 @@
+{
+  "feature": "xc:yellowtree1",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 1
+    }
+  ]
+}

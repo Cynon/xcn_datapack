@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:music_disc_pigstep"
+    },
+    "title": {
+      "text": "Leningrad Cowboys"
+    },
+    "description": "Play a Lena Raine banger for a red audience.",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/crimson_forest",
+  "criteria": {
+    "play_jukebox_in_cf_pig": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:music_disc_pigstep"
+          ]
+        },
+        "location": {
+          "biome": "minecraft:crimson_forest",
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "play_jukebox_in_cf_pig"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}

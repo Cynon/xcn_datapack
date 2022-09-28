@@ -1,0 +1,59 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:compass",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Original Sin"
+    },
+    "description": {
+      "text": "Gary Gin might be proud. Might be. I don't know, ask him."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/root",
+  "criteria": {
+    "xc:origin_ne": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "y": {
+                    "min": 0,
+                    "max": 33
+                  },
+                  "z": {
+                    "min": 0,
+                    "max": 1
+                  }
+                },
+                "dimension": "minecraft:the_nether"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:origin_ne"
+    ]
+  ],
+  "rewards": {
+    "experience": 15
+  }
+}

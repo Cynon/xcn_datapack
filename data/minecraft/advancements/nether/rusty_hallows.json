@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:red_sand",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Oxydized Entertainment"
+    },
+    "description": {
+      "text": "What the hell does that even mean, anyway?"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/explore_nether",
+  "criteria": {
+    "xc:rusty_hallows": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "xc:rusty_hallows"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:rusty_hallows"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}

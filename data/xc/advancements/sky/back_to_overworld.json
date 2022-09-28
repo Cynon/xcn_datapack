@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald",
+      "nbt": "{CustomModelData:709}"
+    },
+    "title": {
+      "text": "Earthbound"
+    },
+    "description": {
+      "text": "Come back down to earth there, sparky."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "xc:sky/root",
+  "criteria": {
+    "xc:left_sky": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "xc:pax",
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:left_sky"
+    ]
+  ]
+}

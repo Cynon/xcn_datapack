@@ -1,0 +1,27 @@
+{
+  "feature": "xc:ore_lime_terracotta_sky",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 12
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 100
+        },
+        "max_inclusive": {
+          "absolute": 220
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

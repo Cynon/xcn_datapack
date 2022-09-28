@@ -1,0 +1,57 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:chiseled_red_sandstone",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Pikaaa!!"
+    },
+    "description": {
+      "text": "A shocking turn of events!"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/rusty_hallows",
+  "criteria": {
+    "xc:lightning_strike": {
+      "trigger": "minecraft:lightning_strike",
+      "conditions": {
+        "lightning": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "lightning",
+                "entity_struck": {
+                  "type": "minecraft:player",
+                  "location": {
+                    "biome": "xc:rusty_hallows",
+                    "dimension": "minecraft:the_nether"
+                  },
+                  "distance": {
+                    "absolute": {
+                      "max": 2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:lightning_strike"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

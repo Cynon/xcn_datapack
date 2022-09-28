@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:scattered_ore",
+  "config": {
+    "size": 6,
+    "discard_chance_on_air_exposure": 0.95,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:base_stone_nether"
+        },
+        "state": {
+          "Name": "minecraft:tnt",
+          "Properties": {
+            "unstable": "true"
+          }
+        }
+      }
+    ]
+  }
+}

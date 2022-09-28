@@ -1,0 +1,121 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald",
+      "nbt": "{CustomModelData:721}"
+    },
+    "title": {
+      "text": "Rainbow Cruise"
+    },
+    "description": {
+      "text": "Explore every biome in the skylands!"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "xc:sky/root",
+  "criteria": {
+    "xc:green_heights_goto": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "xc:green_heights"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "xc:gray_heights_goto": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "xc:gray_heights"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "xc:green_skywoods_goto": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "xc:green_skywoods"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "xc:golden_skywoods_goto": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "xc:golden_skywoods"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "xc:rainbow_skywoods_goto": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "xc:rainbow_skywoods"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:green_heights_goto"
+    ],
+    [
+      "xc:gray_heights_goto"
+    ],
+    [
+      "xc:green_skywoods_goto"
+    ],
+    [
+      "xc:golden_skywoods_goto"
+    ],
+    [
+      "xc:rainbow_skywoods_goto"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

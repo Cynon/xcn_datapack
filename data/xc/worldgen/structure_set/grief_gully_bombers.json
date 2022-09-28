@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "xc:grief_gully_bombers",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 0,
+    "spacing": 1,
+    "separation": 0
+  }
+}

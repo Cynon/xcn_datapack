@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:skeleton_skull",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Not-A-Live"
+    },
+    "description": {
+      "text": "Reading the warnings is a good idea, don't you think?"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/vexwild",
+  "criteria": {
+    "xc:vex_killed_you": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "xc:vexwild"
+              }
+            }
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:vex"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:vex_killed_you"
+    ]
+  ],
+  "rewards": {
+    "experience": 5
+  }
+}

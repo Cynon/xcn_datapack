@@ -1,0 +1,78 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:chiseled_red_sandstone",
+      "nbt": "{Damage:6}"
+    },
+    "title": {
+      "text": "Failed to Dodge it 100 Times"
+    },
+    "description": {
+      "text": "Got killed by lightning in the rusty hallows."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/rusty_hallows_lightning",
+  "criteria": {
+    "xc:lightning_strike2": {
+      "trigger": "minecraft:lightning_strike",
+      "conditions": {
+        "lightning": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "lightning",
+                "entity_struck": {
+                  "type": "minecraft:player",
+                  "location": {
+                    "biome": "xc:rusty_hallows",
+                    "dimension": "minecraft:the_nether"
+                  },
+                  "distance": {
+                    "absolute": {
+                      "max": 2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "xc:lightning_killed_you": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:lightning_bolt",
+          "type_specific": {
+            "type": "lightning",
+            "entity_struck": {
+              "type": "minecraft:player",
+              "location": {
+                "biome": "xc:rusty_hallows",
+                "dimension": "minecraft:the_nether"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:lightning_strike2"
+    ],
+    [
+      "xc:lightning_killed_you"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

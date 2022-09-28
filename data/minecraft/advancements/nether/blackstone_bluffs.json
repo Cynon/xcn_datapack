@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:blackstone",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Tourmaline Tourniquet"
+    },
+    "description": {
+      "text": "It rocks in here!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/explore_nether",
+  "criteria": {
+    "xc:blackstone_bluffs": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "xc:blackstone_bluffs"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:blackstone_bluffs"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}

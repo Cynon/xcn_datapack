@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:block_pile",
+  "config": {
+    "tries": 4,
+    "state_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:glowstone"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:soul_sand"
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:cyan_concrete_powder"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:cyan_concrete"
+          }
+        }
+      ]
+    }
+  }
+}

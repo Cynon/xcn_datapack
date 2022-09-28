@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:minecart",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Atrophy Truck"
+    },
+    "description": {
+      "text": "Don't give Robby Gordon ideas."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/petrified_forest",
+  "criteria": {
+    "xc:atrophy_truck": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "xc:petrified_forest"
+          },
+          "vehicle": {
+            "type": "minecraft:minecart"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:atrophy_truck"
+    ]
+  ],
+  "rewards": {
+    "experience": 25
+  }
+}

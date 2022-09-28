@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.2,
+        "feature": "xc:gw_tree_bees_002"
+      },
+      {
+        "chance": 0.1,
+        "feature": "xc:fancy_gw_tree2_bees_002"
+      }
+    ],
+    "default": "xc:fancy_gw_tree_bees_002"
+  }
+}

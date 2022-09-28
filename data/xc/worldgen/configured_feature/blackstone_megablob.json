@@ -1,0 +1,137 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "config": {
+    "surface": "floor",
+    "depth": 3,
+    "vertical_range": 27,
+    "extra_bottom_block_chance": 0.2,
+    "extra_edge_column_chance": 0.5,
+    "vegetation_chance": 1,
+    "xz_radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 0,
+        "max_inclusive": 3
+      }
+    },
+    "replaceable": "#minecraft:nether_carver_replaceables",
+    "ground_state": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:blackstone"
+      }
+    },
+    "vegetation_feature": {
+      "feature": {
+        "type": "minecraft:block_column",
+        "config": {
+          "direction": "up",
+          "allowed_placement": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:not",
+                "predicate": {
+                  "type": "minecraft:all_of",
+                  "predicates": [
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -2,
+                        -1
+                      ],
+                      "blocks": "minecraft:air"
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -2,
+                        1
+                      ],
+                      "blocks": [
+                        "minecraft:air"
+                      ]
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        1,
+                        -2,
+                        0
+                      ],
+                      "blocks": [
+                        "minecraft:air"
+                      ]
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        -1,
+                        -2,
+                        0
+                      ],
+                      "blocks": [
+                        "minecraft:air"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "prioritize_tip": false,
+          "layers": [
+            {
+              "height": {
+                "type": "minecraft:clamped_normal",
+                "value": {
+                  "min_inclusive": 1,
+                  "max_inclusive": 12,
+                  "mean": 2,
+                  "deviation": 1
+                }
+              },
+              "provider": {
+                "type": "minecraft:noise_provider",
+                "seed": 72,
+                "noise": {
+                  "firstOctave": -7,
+                  "amplitudes": [
+                    1,
+                    2,
+                    1,
+                    1
+                  ]
+                },
+                "scale": 1,
+                "states": [
+                  {
+                    "Name": "minecraft:blackstone"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:noise_based_count",
+          "noise_to_count_ratio": 10,
+          "noise_factor": 20,
+          "noise_offset": -0.15
+        },
+        {
+          "type": "minecraft:rarity_filter",
+          "chance": 29
+        },
+        {
+          "type": "minecraft:count_on_every_layer",
+          "count": 10
+        }
+      ]
+    }
+  }
+}

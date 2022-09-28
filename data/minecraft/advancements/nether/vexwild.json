@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:light_blue_concrete_powder",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "The World's Deadliest Toothpaste"
+    },
+    "description": {
+      "text": "It can't be that bad, can it?"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/explore_nether",
+  "criteria": {
+    "xc:vexwild": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "xc:vexwild"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:vexwild"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}

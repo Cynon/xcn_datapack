@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block_pile",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 35,
+          "data": {
+            "Name": "minecraft:blackstone"
+          }
+        },
+        {
+          "weight": 25,
+          "data": {
+            "Name": "minecraft:smooth_basalt"
+          }
+        },
+        {
+          "weight": 9,
+          "data": {
+            "Name": "minecraft:gilded_blackstone"
+          }
+        }
+      ]
+    }
+  }
+}

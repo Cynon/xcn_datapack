@@ -1,0 +1,59 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:polished_blackstone_slab",
+      "nbt": "{Damage:4}"
+    },
+    "title": {
+      "text": "3.6 Roentgen"
+    },
+    "description": {
+      "text": "Not great, not terrible."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/blackstone_bluffs",
+  "criteria": {
+    "xc:gas_killed_you": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "killer",
+            "predicate": {
+              "type": "minecraft:area_effect_cloud",
+              "nbt": "{CustomName:'{\"text\":\"noxious gas\"}'}"
+            }
+          }
+        ]
+      }
+    },
+    "xc:gas_effects": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:nausea": {},
+          "minecraft:poison": {
+            "amplifier": 2
+          },
+          "minecraft:instant_damage": {}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:gas_effects"
+    ],
+    [
+      "xc:gas_killed_you"
+    ]
+  ],
+  "rewards": {
+    "experience": 25
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:huge_fungus",
+  "config": {
+    "hat_state": {
+      "Name": "minecraft:light_blue_stained_glass"
+    },
+    "decor_state": {
+      "Name": "minecraft:verdant_froglight",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "stem_state": {
+      "Name": "minecraft:cyan_terracotta",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "valid_base_block": {
+      "Name": "minecraft:light_blue_concrete_powder"
+    },
+    "planted": false
+  }
+}

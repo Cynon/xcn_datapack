@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:dead_tube_coral_fan",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Atrophy Case"
+    },
+    "description": {
+      "text": "Not quite the flex you thought it was."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/petrified_forest",
+  "criteria": {
+    "xc:atrophy_case": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:shulker_box",
+        "location": {
+          "biome": "xc:petrified_forest"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:atrophy_case"
+    ]
+  ],
+  "rewards": {
+    "experience": 25
+  }
+}

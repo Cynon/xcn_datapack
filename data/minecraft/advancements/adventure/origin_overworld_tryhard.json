@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:filled_map",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "A++ Originality"
+    },
+    "description": {
+      "text": "Trying a little bit harder than you needed to."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:adventure/origin_overworld",
+  "criteria": {
+    "xc:origin_ov2": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "x": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "y": 0,
+                  "z": {
+                    "min": 0,
+                    "max": 1
+                  }
+                },
+                "dimension": "minecraft:overworld"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:origin_ov2"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

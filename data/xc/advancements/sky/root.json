@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald",
+      "nbt": "{CustomModelData:705}"
+    },
+    "title": {
+      "translate": "Mile High Club"
+    },
+    "description": {
+      "text": "Enter the skylands!"
+    },
+    "background": "minecraft:textures/block/quartz_block_bottom.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "entered_sky": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "xc:pax"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "entered_sky"
+    ]
+  ]
+}

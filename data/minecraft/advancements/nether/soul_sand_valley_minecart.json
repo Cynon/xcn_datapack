@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:minecart",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Soul Train"
+    },
+    "description": {
+      "text": "Don't make any bets with me."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:nether/soul_sand_valley",
+  "criteria": {
+    "xc:soul_train": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "minecraft:soul_sand_valley"
+          },
+          "vehicle": {
+            "type": "minecraft:minecart"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "xc:soul_train"
+    ]
+  ],
+  "rewards": {
+    "experience": 25
+  }
+}

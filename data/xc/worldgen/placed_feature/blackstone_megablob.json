@@ -1,0 +1,13 @@
+{
+  "feature": "xc:blackstone_megablob",
+  "placement": [
+        {
+          "type": "minecraft:rarity_filter",
+          "chance": 7
+        },
+        {
+          "type": "minecraft:count",
+          "count": 2
+        }
+      ]
+}
